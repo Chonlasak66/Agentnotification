@@ -34,8 +34,8 @@
       var CallID;
 
       //--Dev Server------------------------------
-      //var APIServer = "https://10.21.43.203:8500/api/v1";
-      //var WebSecketServer = "ws://10.21.43.203:8501";
+      //var APIServer = "https://192.168.56.104:4000/api/v1";
+      //var WebSecketServer = "ws://192.168.56.104:3071";
 
       //--Staging Server------------------------------
       var APIServer = "https://10.21.43.203:8500/api/v1";
@@ -906,15 +906,16 @@
 
       <div id="sendMessage">
         <div class="row">
-          <div class="col-12">
+          <div class="input-group mb-1">
             <label for="sendMessage" class="text-white">Send Message:</label>
             <div class="input-group mb-1">
               <input
                 type="text"
                 class="form-control form-control-sm"
                 id="toAgent"
-                placeholder="Enter Agent Code"
+                placeholder="Send to Agent Code"
               />
+            </div>
               <input
                 type="text"
                 class="form-control form-control-sm"
@@ -926,9 +927,9 @@
                 class="btn btn-warning btn-sm btn-block shadow"
                 onclick="checkText(event)"
               >
-                Connect
+                Send
               </button>
-            </div>
+            
           </div>
         </div>
       </div>
